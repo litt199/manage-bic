@@ -1,9 +1,9 @@
 import React from 'react'
 import './index.less'
 import MenuConfig from '../../config/menuConfig'
-import { Menu } from 'antd';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
-const { SubMenu } = Menu;
+import { Menu } from 'antd'
+import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons'
+const { SubMenu } = Menu
 
 export default class NavLeft extends React.Component{
     componentWillMount(){
@@ -35,7 +35,7 @@ export default class NavLeft extends React.Component{
                     <img src="/assets/logo2.png"/>
                     <h1>bicycle</h1>
                 </div>
-                <Menu style={{ width: 180}} mode="vertical" theme="dark">
+                <Menu mode="vertical" theme="dark">
                     {this.state.menuNode}
                 </Menu>
             </div>
